@@ -12,8 +12,8 @@
 		},
 		"https://github.com/dliocode/horse-utils-clientip": {
 			"name": "horse-utils-clientip",
-			"version": "0.0.1",
-			"hash": "5d3b15f7ea3c0542803208b3226e79da",
+			"version": "0.0.4",
+			"hash": "5802397a4d8b9819cd2c47a8ebe16135",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
