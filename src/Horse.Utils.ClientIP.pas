@@ -46,11 +46,11 @@ begin
     Exit(Trim(THorseHackRequest(Req).RawWebRequest.RemoteIP));
   {$ENDIF}
 
-  if not Trim(THorseHackRequest(Req).GetWebRequest.RemoteAddr).IsEmpty then
-    Exit(Trim(THorseHackRequest(Req).GetWebRequest.RemoteAddr));
+  if not Trim(THorseHackRequest(Req).RawWebRequest.RemoteAddr).IsEmpty then
+    Exit(Trim(THorseHackRequest(Req).RawWebRequest.RemoteAddr));
 
-  if not Trim(THorseHackRequest(Req).GetWebRequest.RemoteHost).IsEmpty then
-    Exit(Trim(THorseHackRequest(Req).GetWebRequest.RemoteHost));
+  if not Trim(THorseHackRequest(Req).RawWebRequest.RemoteHost).IsEmpty then
+    Exit(Trim(THorseHackRequest(Req).RawWebRequest.RemoteHost));
 end;
 
 end.
