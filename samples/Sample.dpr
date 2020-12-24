@@ -1,4 +1,4 @@
-program UtilsClientIP;
+program Sample;
 
 uses
   Horse,

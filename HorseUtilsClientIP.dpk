@@ -1,4 +1,4 @@
-package HorseUtils;
+package HorseUtilsClientIP;
 
 {$R *.res}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
@@ -28,7 +28,8 @@ package HorseUtils;
 {$IMPLICITBUILD ON}
 
 requires
-  rtl;
+  rtl,
+  inet;
 
 contains
   Horse.Utils.ClientIP in 'src\Horse.Utils.ClientIP.pas';

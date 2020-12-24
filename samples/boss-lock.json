@@ -10,8 +10,8 @@
 			"failed": false,
 			"changed": false
 		},
-		"https://github.com/dliocode/horse-utils": {
-			"name": "horse-utils",
+		"https://github.com/dliocode/horse-utils-clientip": {
+			"name": "horse-utils-clientip",
 			"version": "0.0.1",
 			"hash": "5d3b15f7ea3c0542803208b3226e79da",
 			"artifacts": {},
