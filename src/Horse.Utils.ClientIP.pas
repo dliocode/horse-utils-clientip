@@ -38,8 +38,13 @@ begin
   if not Trim(Req.Headers['REMOTE_ADDR']).IsEmpty then
     Exit(Trim(Req.Headers['REMOTE_ADDR']));
 
-  if not Trim(THorseHackRequest(Req).GetWebRequest.RemoteIP).IsEmpty then
-    Exit(Trim(THorseHackRequest(Req).GetWebRequest.RemoteIP));
+  {$IF DEFINED(FPC)}
+  if not Trim(THorseHackRequest(Req).RawWebRequest.RemoteAddress ).IsEmpty then
+    Exit(Trim(THorseHackRequest(Req).RawWebRequest.RemoteAddress));
+  {$ELSE}
+  if not Trim(THorseHackRequest(Req).RawWebRequest.RemoteIP ).IsEmpty then
+    Exit(Trim(THorseHackRequest(Req).RawWebRequest.RemoteIP));
+  {$ENDIF}
 
   if not Trim(THorseHackRequest(Req).GetWebRequest.RemoteAddr).IsEmpty then
     Exit(Trim(THorseHackRequest(Req).GetWebRequest.RemoteAddr));
