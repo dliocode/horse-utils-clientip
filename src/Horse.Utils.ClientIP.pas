@@ -4,7 +4,11 @@ interface
 
 uses
   Horse.HTTP,
+  {$IFDEF FPC }
+  SysUtils;
+  {$ELSE}
   System.SysUtils;
+  {$ENDIF}
 
 function ClientIP(const Req: THorseRequest): string;
 
