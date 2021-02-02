@@ -23,6 +23,10 @@ begin
     if not Trim(LIP).IsEmpty then
       Exit(Trim(LIP));
 
+  for LIP in Trim(Req.Headers['x-forwarded-for']).Split([',']) do
+    if not Trim(LIP).IsEmpty then
+      Exit(Trim(LIP));
+
   if not Trim(Req.Headers['HTTP_X_FORWARDED']).IsEmpty then
     Exit(Trim(Req.Headers['HTTP_X_FORWARDED']));
 
