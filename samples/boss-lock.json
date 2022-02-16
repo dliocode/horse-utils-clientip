@@ -4,16 +4,16 @@
 	"installedModules": {
 		"github.com/hashload/horse": {
 			"name": "horse",
-			"version": "v2.0.6",
-			"hash": "cca1769dfab681cfd26ae8499f9045e1",
+			"version": "3.0.0",
+			"hash": "6b26d91b375f5e95a757447a746574ca",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
 		},
 		"https://github.com/dliocode/horse-utils-clientip": {
 			"name": "horse-utils-clientip",
-			"version": "0.0.4",
-			"hash": "5802397a4d8b9819cd2c47a8ebe16135",
+			"version": "0.0.7",
+			"hash": "86bd086247d70f796818cb01881d4bb1",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
