@@ -3,7 +3,7 @@ unit Horse.Utils.ClientIP;
 interface
 
 uses
-  Horse.HTTP,
+  Horse,
   {$IFDEF FPC }
   SysUtils;
   {$ELSE}
